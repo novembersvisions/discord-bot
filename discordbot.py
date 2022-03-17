@@ -1,4 +1,4 @@
-# bot.py
+# Creating a connection to Discord
 import os
 
 import discord
@@ -14,5 +14,3 @@ async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
 client.run(TOKEN)
-
-#i hate you vs code :(())
