@@ -22,6 +22,7 @@ async def on_ready():
     f'{guild.name}(id: {guild.id})'
     )
 
+# Kafka quotes for Ethan and Gatz
 @client.event
 async def on_message(message):
     if message.author == client.user:
