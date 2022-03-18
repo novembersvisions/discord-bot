@@ -1,13 +1,16 @@
 # Creating a connection to Discord
 import os
 
+# Importing packages
 import discord
 from dotenv import load_dotenv
 
+# .env file
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
+# Contacting Discord's API, connecting to server
 client = discord.Client()
 
 @client.event
@@ -18,13 +21,6 @@ async def on_ready():
     print(
     f'{client.user} has connected to the guild:\n'
     f'{guild.name}(id: {guild.id})'
-    )
-
-@client.event
-async def on_member_join(member):
-    await member.create_dm()
-    await member.dm_channel.send(
-        f'welcome to aglow, {member.name}.'
     )
 
 client.run(TOKEN)
