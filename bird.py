@@ -19,6 +19,7 @@ client = commands.Bot(command_prefix="!")
 async def on_ready():
    print("Ready")
 
+# Generate bird images
 @client.command()
 async def bird(ctx):
    async with aiohttp.ClientSession() as session:
@@ -26,6 +27,16 @@ async def bird(ctx):
       birdjson = await request.json()
       embed = discord.Embed(title="a bird", color=discord.Color.blue())
       embed.set_image(url=birdjson['link'])
+      await ctx.send(embed=embed)
+
+# Generate cat images
+@client.command()
+async def willo(ctx):
+   async with aiohttp.ClientSession() as session:
+      request = await session.get('https://some-random-api.ml/img/cat')
+      catjson = await request.json()
+      embed = discord.Embed(title="a cat", color=discord.Color.yellow())
+      embed.set_image(url=catjson['link'])
       await ctx.send(embed=embed)
 
 client.run(TOKEN)
