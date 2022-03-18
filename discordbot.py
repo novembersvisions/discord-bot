@@ -72,4 +72,9 @@ async def on_message(message):
         response = random.choice(kafka)
         await message.channel.send(response)
 
+# Say hello
+    if message.content == 'Hi hive mind bot':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+    await client.process_commands(message)
+
 client.run(TOKEN)
