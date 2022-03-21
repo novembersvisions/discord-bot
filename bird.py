@@ -74,6 +74,9 @@ async def willow(ctx):
         ),
         (
         'April 27. Incapable of living with people, of speaking. Complete immersion in myself, thinking of myself. Apathetic, witless, fearful. I have nothing to say to anyone - never.'
+        ),
+         (
+        'I am inside your walls.'
         ), ]
 
    response = random.choice(willow)
