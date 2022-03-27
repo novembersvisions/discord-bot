@@ -21,12 +21,12 @@ polka()
         console.log(`> Running on http://localhost:333`);
     });
 
-   // const url = "http://hivemindbot.surge.sh/get";
-   // let plane;
-   // let result;
-   // async function fetchImg() {
-   //     const response = await fetch(url)
-   //     result = await response.json()
-   //     plane = result.image;
-   // }
-   // fetchImg()
+  /* const url = "http://hivemindbot.surge.sh/get";
+   let plane;
+   let result;
+   async function fetchImg() {
+        const response = await fetch(url)
+        result = await response.json()
+        plane = result.image;
+     }
+   fetchImg() */
