@@ -35,4 +35,20 @@ async def gatz(ctx):
    embed.set_image(url=GatzLink)
    await ctx.send(embed=embed)
 
+# Generate Shay's images
+NumImages = 50
+ImageBaseLink = 'http://hivemindbot.surge.sh/shay/'
+ImageExtension = '.jpg'
+ImageLinks = []
+for x in range(NumImages):
+   ImageLink = f'{ImageBaseLink}{x}{ImageExtension}'
+   ImageLinks.append(ImageLink)
+     
+@client.command()
+async def shay(ctx):
+   ShayLink = ImageLinks[random.randint(0, len(ImageLinks)-1)]
+   embed = discord.Embed(title="an image for shay", color=discord.Color.gold())
+   embed.set_image(url=ShayLink)
+   await ctx.send(embed=embed)
+
 client.run(TOKEN)
