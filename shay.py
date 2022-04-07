@@ -19,9 +19,9 @@ client = commands.Bot(command_prefix="!")
 async def on_ready():
    print("Ready")
 
-# Generate airplane images
-NumImages = 22
-ImageBaseLink = 'http://hivemindbot.surge.sh/img/'
+# Generate Shay's images
+NumImages = 50
+ImageBaseLink = 'http://hivemindbot.surge.sh/shay/'
 ImageExtension = '.jpg'
 ImageLinks = []
 for x in range(NumImages):
@@ -29,10 +29,10 @@ for x in range(NumImages):
    ImageLinks.append(ImageLink)
      
 @client.command()
-async def gatz(ctx):
-   GatzLink = ImageLinks[random.randint(0, len(ImageLinks)-1)]
-   embed = discord.Embed(title="airplane", color=discord.Color.red())
-   embed.set_image(url=GatzLink)
+async def shay(ctx):
+   ShayLink = ImageLinks[random.randint(0, len(ImageLinks)-1)]
+   embed = discord.Embed(title="an image for shay", color=discord.Color.gold())
+   embed.set_image(url=ShayLink)
    await ctx.send(embed=embed)
 
 client.run(TOKEN)
