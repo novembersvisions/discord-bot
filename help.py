@@ -25,6 +25,7 @@ async def info(ctx):
     embed.add_field(name="!kafka", value="generate a kafka quote", inline=False)
     embed.add_field(name="!bird", value="generate an image of a bird", inline=False)
     embed.add_field(name="!gatz", value="generate an image of an airplane", inline=False)
+    embed.add_field(name="!shay", value="generate an aesthetic image", inline=False)
     embed.add_field(name="!willow", value="generate an image of a cat along with an ominous quote", inline=False)
     embed.add_field(name="additional functionality", value="if you say hi to me, i will respond :)", inline=False)
     await ctx.send(embed=embed)
