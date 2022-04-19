@@ -76,4 +76,31 @@ async def on_message(message):
     if message.content == 'Hi hive mind bot':
         await message.channel.send(f'hello {message.author.name}, how are you?')
 
+    if message.content == 'hi hive mind bot':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'hi hive mind':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'Hi hive mind':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'hello hive mind bot':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'hello hive mind':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'Hello hive mind':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'Hi hive mind.':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'Hi hive mind bot.':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
+    if message.content == 'HIVE MIND.':
+        await message.channel.send(f'hello {message.author.name}, how are you?')
+
 client.run(TOKEN)
